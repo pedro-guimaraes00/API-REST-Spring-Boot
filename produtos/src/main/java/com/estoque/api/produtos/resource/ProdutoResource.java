@@ -47,5 +47,6 @@ public class ProdutoResource {
 		return produtoRepository.save(produto);	
 	}
 
+	
 }
 
