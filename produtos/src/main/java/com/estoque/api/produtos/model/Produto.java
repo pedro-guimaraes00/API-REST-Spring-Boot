@@ -1,6 +1,5 @@
 package com.estoque.api.produtos.model;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -16,8 +15,8 @@ public class Produto {
 	@Id @GeneratedValue(strategy = GenerationType.AUTO)
 	private Long  id;
 	private String name;
-	@Column(name =  "department_id")
 	private Long stock;
+	private Long department_id;
 	private Double price;
 	
 	
@@ -31,6 +30,14 @@ public class Produto {
 		
 		public void setName(String name) {
 			this.name = name;
+		}
+		
+		public Long getDepartment_id() {
+			return department_id;
+		}
+
+		public void setDepartment_id(Long department_id) {
+			this.department_id = department_id;
 		}
 		
 		public Long getStock() {

@@ -1,4 +1,4 @@
-package com.estoque.api.produtos.resource;
+ package com.estoque.api.produtos.resource;
 
 import java.util.List;
 
@@ -33,7 +33,7 @@ public class ProdutoResource {
 	}
 	
 	@PostMapping("/produto")
-	public Produto salvar(@RequestBody Produto produto) {
+	public Produto salvar(@RequestBody Produto produto) { 
 		return produtoRepository.save(produto);	
 	}
 	
