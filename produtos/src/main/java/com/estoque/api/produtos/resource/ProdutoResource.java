@@ -57,7 +57,6 @@ public class ProdutoResource {
 	public Produto atualizar(@RequestBody Produto produto) {
 		return produtoRepository.save(produto);	
 	}
-
 	
 }
 
